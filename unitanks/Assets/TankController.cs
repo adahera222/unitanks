@@ -5,6 +5,8 @@ public class TankController : MonoBehaviour {
 	
 	public float speed = 20;
 	public Quaternion initialRotation;
+	public GameObject mBullet;
+	
 	// Use this for initialization
 	void Start () {
 		initialRotation = transform.rotation;
@@ -37,6 +39,11 @@ public class TankController : MonoBehaviour {
 			transform.rotation = initialRotation;
 			rigidbody.AddForce(transform.forward * speed, ForceMode.Impulse);
 			transform.Rotate(new Vector3(0, 90, 0));
+		}
+		
+		if (Input.GetKeyDown(KeyCode.Space)) {
+			Instantiate(mBullet, transform.position, transform.rotation);
+			
 		}
 		
 	}
