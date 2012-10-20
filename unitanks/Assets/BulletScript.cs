@@ -3,7 +3,7 @@ using System.Collections;
 
 public class BulletScript : MonoBehaviour {
 	
-	public float speed = 100;
+	public float speed = 10000000;
 	
 	// Use this for initialization
 	void Start () {
