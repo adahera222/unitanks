@@ -15,4 +15,8 @@ public class BulletScript : MonoBehaviour {
 		rigidbody.AddForce(-transform.right * speed, ForceMode.Impulse);
 	}
 	
+	void OnCollisionEnter(Collision col) {
+		DestroyObject(this.gameObject);
+	}
+	
 }
