@@ -3,7 +3,7 @@ using System.Collections;
 
 public class TankController : MonoBehaviour {
 	
-	public float speed = 5;
+	public float speed = 20;
 	// Use this for initialization
 	void Start () {
 	
@@ -12,6 +12,7 @@ public class TankController : MonoBehaviour {
 	// Update is called once per frame
 	void Update () {
 
+		rigidbody.velocity = Vector3.zero;
 		if (Input.GetKey(KeyCode.RightArrow)){
 			rigidbody.AddForce(transform.right * speed, ForceMode.Impulse);
 			//transform.rotation = initialRot;
