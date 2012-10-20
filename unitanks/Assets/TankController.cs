@@ -11,6 +11,7 @@ public class TankController : MonoBehaviour {
 	
 	// Update is called once per frame
 	void Update () {
+
 		if (Input.GetKey(KeyCode.RightArrow)){
 			rigidbody.AddForce(transform.right * speed, ForceMode.Impulse);
 			//transform.rotation = initialRot;
@@ -32,8 +33,6 @@ public class TankController : MonoBehaviour {
 			if (Input.GetKey(KeyCode.UpArrow)){
 			rigidbody.AddForce(transform.forward * speed, ForceMode.Impulse);
 			//transform.rotation = initialRot;
-			
-	
 		}
 	}
 }
