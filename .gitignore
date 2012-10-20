@@ -6,6 +6,10 @@ Library/cache
 Library/metadata
 Library/previews
 Library/ScriptAssemblies
+Library/cache/*
+Library/metadata/*
+Library/previews/*
+Library/ScriptAssemblies/*
 
 Assembly-CSharp-Editor-firstpass-vs.csproj
 Assembly-CSharp-Editor-firstpass.csproj
